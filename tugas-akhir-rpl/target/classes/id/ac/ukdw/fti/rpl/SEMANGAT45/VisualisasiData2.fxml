@@ -10,9 +10,9 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane fx:id="background_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="background_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="1230.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Accordion fx:id="VisDatEvent" layoutX="14.0" layoutY="76.0" prefHeight="631.0" prefWidth="1175.0">
+      <Accordion fx:id="VisDatEvent" layoutX="14.0" layoutY="106.0" prefHeight="634.0" prefWidth="1202.0">
         <panes>
           <TitledPane fx:id="JudulVisdat" animated="false" text="Visualisasi Data Event Dari e-Alkitab">
                <content>
@@ -28,9 +28,9 @@
           </TitledPane>
         </panes>
       </Accordion>
-      <Text fx:id="JudulUtama" layoutX="435.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualisasi Utama Dalam e-Alkitab" wrappingWidth="461.99566650390625">
+      <Text fx:id="JudulUtama" layoutX="377.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualisasi Utama Dalam e-Alkitab" wrappingWidth="532.3958129882812">
          <font>
-            <Font name="Gill Sans MT Ext Condensed Bold" size="52.0" />
+            <Font name="Gill Sans MT Condensed" size="52.0" />
          </font>
       </Text>
    </children>

@@ -51,16 +51,16 @@ public class VisualData2 implements Initializable {
     public void initialize(URL location, ResourceBundle resourceBundle){
         try {
             events = Database.instance.visEvent();
-            ArrayList<String> listPlace = new ArrayList<String>();
-            XYChart.Series dataresult1 = new XYChart.Series();
-            dataresult1.setName("Event");
+            //ArrayList<String> listPlace = new ArrayList<String>();
+            XYChart.Series dataresult = new XYChart.Series();
+            dataresult.setName("Event");
             BentukVisdatEvents.setLegendVisible(false);
             for(int i = events.size()-1; i>-0; i--){
                 System.out.println(events.get(i).getPlaces());
                 System.out.println(events.get(i).getPlaces().split(",").length);                
-                dataresult1.getData().add(new BarChart.Data(events.get(i).getTitle(),events.get(i).getPlaces().split(",").length));
+                dataresult.getData().add(new BarChart.Data(events.get(i).getTitle(),events.get(i).getPlaces().split(",").length));
             }
-            BentukVisdatEvents.getData().add(dataresult1);
+            BentukVisdatEvents.getData().add(dataresult);
             } catch (Exception e){
                 System.out.println(e.getMessage());
             }

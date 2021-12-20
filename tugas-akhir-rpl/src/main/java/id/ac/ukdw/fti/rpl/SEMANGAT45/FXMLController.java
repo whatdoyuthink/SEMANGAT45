@@ -61,6 +61,8 @@ public class FXMLController implements Initializable {
     @FXML
     private Button btnVisDat;
 
+    @FXML
+    private Button btnVisDat1;
 
     @FXML
     void display(ActionEvent event) throws IOException {

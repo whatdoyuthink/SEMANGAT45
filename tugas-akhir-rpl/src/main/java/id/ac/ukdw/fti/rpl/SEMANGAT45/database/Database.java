@@ -1,14 +1,9 @@
 package id.ac.ukdw.fti.rpl.SEMANGAT45.database;
 
-import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
-import id.ac.ukdw.fti.rpl.SEMANGAT45.modal.Verse;
+import java.sql.Statement;
 
 import id.ac.ukdw.fti.rpl.SEMANGAT45.modal.Event;
 import id.ac.ukdw.fti.rpl.SEMANGAT45.modal.Places;
