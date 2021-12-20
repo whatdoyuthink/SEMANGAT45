@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="6000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="1042.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml" fx:controller="id.ac.ukdw.fti.rpl.SEMANGAT45.FXMLController">
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="6000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="1042.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.fti.rpl.SEMANGAT45.FXMLController">
    <children>
       <Text fx:id="title" fill="#cf0505" layoutX="461.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alkitab For You" textAlignment="CENTER">
          <font>
@@ -32,6 +32,7 @@
             <Font size="17.0" />
          </font>
       </Text>
-      <Button fx:id="btnVisDat" layoutX="353.0" layoutY="102.0" mnemonicParsing="false" onAction="#display" prefHeight="30.0" prefWidth="136.0" text="Data Visualisation" />
+      <Button fx:id="btnVisDat" layoutX="353.0" layoutY="102.0" mnemonicParsing="false" onAction="#display" prefHeight="30.0" prefWidth="149.0" text="Data Visualisation Places" />
+      <Button fx:id="btnVisDat1" layoutX="521.0" layoutY="102.0" mnemonicParsing="false" onAction="#display1" prefHeight="30.0" prefWidth="150.0" text="Data Visualisation Event" />
    </children>
 </AnchorPane>

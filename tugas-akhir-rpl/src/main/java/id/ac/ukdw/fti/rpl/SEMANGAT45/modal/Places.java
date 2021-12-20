@@ -29,7 +29,7 @@ public class Places {
 
     public String getEventsHere() {
         if(this.eventsHere == null){
-            return "null123";
+            return "null";
         }else{
             return this.eventsHere;
         }

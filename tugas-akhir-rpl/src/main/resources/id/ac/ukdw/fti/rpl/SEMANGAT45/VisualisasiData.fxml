@@ -25,18 +25,6 @@
                   </AreaChart>
                </content>
           </TitledPane>
-          <TitledPane fx:id="VisDatEvent" animated="false" text="Visualisasi Data Event dari  e-Alkitab">
-               <content>
-                  <AreaChart fx:id="BentukVisDatEvent">
-                    <xAxis>
-                      <CategoryAxis fx:id="EventAxis" side="BOTTOM" />
-                    </xAxis>
-                    <yAxis>
-                      <NumberAxis fx:id="TotalEventAxis" side="LEFT" />
-                    </yAxis>
-                  </AreaChart>
-               </content>
-          </TitledPane>
         </panes>
       </Accordion>
       <Text fx:id="JudulVisDat" layoutX="532.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualisasi Data Dalam e-Alkitab">

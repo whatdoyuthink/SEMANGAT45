@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import id.ac.ukdw.fti.rpl.SEMANGAT45.database.Database;
-import id.ac.ukdw.fti.rpl.SEMANGAT45.modal.Event;
+//import id.ac.ukdw.fti.rpl.SEMANGAT45.modal.Event;
 import id.ac.ukdw.fti.rpl.SEMANGAT45.modal.Places;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -59,7 +59,7 @@ public class VisualData implements Initializable {
     private Text JudulVisDat;
 
     private ObservableList<Places> places = FXCollections.observableArrayList();
-    private ObservableList<Event> events = FXCollections.observableArrayList();
+    //private ObservableList<Event> events = FXCollections.observableArrayList();
 
     public void initialize(URL location, ResourceBundle resourceBundle){
         try {

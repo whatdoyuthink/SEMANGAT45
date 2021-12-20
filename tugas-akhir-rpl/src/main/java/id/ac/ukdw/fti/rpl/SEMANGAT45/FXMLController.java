@@ -70,7 +70,20 @@ public class FXMLController implements Initializable {
         Scene scene = new Scene(root2);
 
         scene.setRoot(root2);
-        stage.setTitle("Visualisasi Data");
+        stage.setTitle("Visualisasi Data Places");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void display1(ActionEvent event) throws IOException {
+        Parent root2 = FXMLLoader.load(getClass().getResource("VisualisasiData2.fxml"));
+        
+        Stage stage = new Stage(StageStyle.DECORATED);
+        Scene scene = new Scene(root2);
+
+        scene.setRoot(root2);
+        stage.setTitle("Visualisasi Data Event");
         stage.setScene(scene);
         stage.show();
     }
