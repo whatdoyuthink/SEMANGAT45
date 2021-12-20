@@ -1,12 +1,19 @@
 package id.ac.ukdw.fti.rpl.SEMANGAT45;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+//import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
+
+import java.io.IOException;
 import java.net.URL;
+import javafx.scene.Scene;
 import java.util.ResourceBundle;
 import id.ac.ukdw.fti.rpl.SEMANGAT45.database.Database;
 import id.ac.ukdw.fti.rpl.SEMANGAT45.modal.Verse;
@@ -14,11 +21,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class FXMLController implements Initializable {
 
+    /**
+     *
+     */
     private ObservableList<Verse> verses = FXCollections.observableArrayList();
 
     @FXML
@@ -44,6 +57,23 @@ public class FXMLController implements Initializable {
 
     @FXML
     private Text pencarian;
+
+    @FXML
+    private Button btnVisDat;
+
+
+    @FXML
+    void display(ActionEvent event) throws IOException {
+        Parent root2 = FXMLLoader.load(getClass().getResource("VisualisasiData.fxml"));
+        
+        Stage stage = new Stage(StageStyle.DECORATED);
+        Scene scene = new Scene(root2);
+
+        scene.setRoot(root2);
+        stage.setTitle("Visualisasi Data");
+        stage.setScene(scene);
+        stage.show();
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

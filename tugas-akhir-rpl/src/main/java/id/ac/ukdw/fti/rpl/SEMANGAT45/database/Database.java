@@ -45,6 +45,7 @@ public class Database {
     }
     public Connection opeConnection(Database database){
         return database.connection;
+        
     }
    
 }
